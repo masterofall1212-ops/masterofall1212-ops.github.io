@@ -7,18 +7,18 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f0f8ff;
+            background: #eef9ff;
             color: #222;
         }
 
         header {
             background: linear-gradient(to bottom, #75c9f4, white, #75c9f4);
             text-align: center;
-            padding: 40px 20px;
+            padding: 25px 15px;
         }
 
         header h1 {
-            font-size: 40px;
+            font-size: 38px;
             margin: 10px;
         }
 
@@ -29,14 +29,38 @@
         nav {
             background: #111;
             text-align: center;
-            padding: 15px;
+            padding: 15px 5px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 12px;
+            margin: 8px;
             font-weight: bold;
+            display: inline-block;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px 15px;
+            background: white;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            color: #168bd0;
+            margin-bottom: 5px;
+        }
+
+        .hero p {
+            font-size: 17px;
         }
 
         section {
@@ -45,6 +69,7 @@
             padding: 25px;
             background: white;
             border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
         h2 {
@@ -53,9 +78,10 @@
 
         .achievement {
             background: #eef8ff;
-            padding: 15px;
-            margin: 10px 0;
+            padding: 18px;
+            margin: 12px 0;
             border-radius: 10px;
+            font-weight: bold;
         }
 
         footer {
@@ -64,6 +90,12 @@
             text-align: center;
             padding: 20px;
             margin-top: 40px;
+        }
+
+        .credit {
+            font-size: 12px;
+            color: #555;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -81,6 +113,21 @@
     <a href="#achievements">Achievements</a>
     <a href="#favorite">My Favorite</a>
 </nav>
+
+<div class="hero">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg" 
+         alt="Lionel Messi playing for Argentina">
+
+    <h2>La Pulga 🇦🇷</h2>
+
+    <p>
+        A football legend who lifted the World Cup with Argentina in 2022.
+    </p>
+
+    <p class="credit">
+        Photo: Hossein Zohrevand / Tasnim News Agency, CC BY 4.0
+    </p>
+</div>
 
 <section id="messi">
     <h2>⚽ Lionel Messi</h2>
