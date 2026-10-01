@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messi & Argentina</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f8ff;
+            color: #222;
+        }
+
+        header {
+            background: #75aadb;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: #75aadb;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            padding: 20px;
+        }
+
+        footer {
+            background: #75aadb;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🇦🇷 Lionel Messi 🇦🇷</h1>
+        <p>The story of Messi and Argentina</p>
+    </header>
+
+    <section>
+        <h2>About Lionel Messi</h2>
+        <p>
+            Lionel Messi is one of the most famous footballers in the world.
+            He is known for his extraordinary dribbling, passing, creativity
+            and goalscoring.
+        </p>
+    </section>
+
+    <section>
+        <h2>Messi & Argentina</h2>
+        <p>
+            Messi has represented Argentina throughout his international
+            career. His journey with the national team includes major
+            victories and unforgettable moments.
+        </p>
+    </section>
+
+    <section>
+        <h2>🇦🇷 Argentina</h2>
+        <p>
+            Argentina is one of football's historic national teams.
+            The country's famous sky-blue and white shirt has been worn
+            by generations of great players.
+        </p>
+    </section>
+
+    <section class="quote">
+        <p>
+            "Football is more than a game."
+        </p>
+    </section>
+
+    <footer>
+        <p>Made by Abid | Messi & Argentina ⚽🇦🇷</p>
+    </footer>
+
+</body>
+</html>
