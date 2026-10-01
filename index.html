@@ -40,6 +40,10 @@
             display: inline-block;
         }
 
+        nav a:hover {
+            color: #75c9f4;
+        }
+
         .hero {
             text-align: center;
             padding: 30px 15px;
@@ -94,6 +98,7 @@
         summary {
             font-weight: bold;
             cursor: pointer;
+            font-size: 17px;
         }
 
         .timeline {
@@ -109,6 +114,19 @@
         }
 
         .timeline-item h3 {
+            color: #168bd0;
+            margin-top: 0;
+        }
+
+        .club {
+            background: #eef8ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border-left: 5px solid #75c9f4;
+        }
+
+        .club h3 {
             color: #168bd0;
             margin-top: 0;
         }
@@ -140,6 +158,43 @@
             margin: 5px;
         }
 
+        .trophy {
+            background: #eef8ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
+        .trophy h3 {
+            color: #168bd0;
+            margin-top: 0;
+        }
+
+        .moment {
+            background: #eef8ff;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 280px;
+            margin: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .credit {
+            font-size: 12px;
+            color: #555;
+            margin-top: 8px;
+        }
+
         .about-box {
             background: #eef8ff;
             padding: 20px;
@@ -153,12 +208,6 @@
             padding: 20px;
             margin-top: 40px;
         }
-
-        .credit {
-            font-size: 12px;
-            color: #555;
-            margin-top: 8px;
-        }
     </style>
 </head>
 
@@ -171,10 +220,13 @@
 
 <nav>
     <a href="#messi">Messi</a>
+    <a href="#clubs">Clubs</a>
     <a href="#argentina">Argentina</a>
-    <a href="#achievements">Achievements</a>
+    <a href="#achievements">Trophies</a>
     <a href="#timeline">Career</a>
     <a href="#worldcup">World Cup</a>
+    <a href="#moments">Moments</a>
+    <a href="#gallery">Gallery</a>
     <a href="#favorite">My Favorite</a>
     <a href="#about">About Me</a>
 </nav>
@@ -196,6 +248,7 @@
 
 </div>
 
+
 <section id="messi">
 
     <h2>⚽ Lionel Messi</h2>
@@ -213,6 +266,48 @@
 
 </section>
 
+
+<section id="clubs">
+
+    <h2>🏟️ Messi's Clubs</h2>
+
+    <div class="club">
+
+        <h3>🔵🔴 FC Barcelona</h3>
+
+        <p>
+            Messi spent most of his professional career at Barcelona.
+            He became one of the greatest players in the club's history
+            and won numerous trophies with the team.
+        </p>
+
+    </div>
+
+    <div class="club">
+
+        <h3>🔵🔴 Paris Saint-Germain</h3>
+
+        <p>
+            Messi joined Paris Saint-Germain in 2021 and played in
+            Ligue 1 and the UEFA Champions League.
+        </p>
+
+    </div>
+
+    <div class="club">
+
+        <h3>🩷🖤 Inter Miami CF</h3>
+
+        <p>
+            Messi joined Inter Miami in 2023 and continued his career
+            in Major League Soccer.
+        </p>
+
+    </div>
+
+</section>
+
+
 <section id="argentina">
 
     <h2>🇦🇷 Argentina</h2>
@@ -223,11 +318,61 @@
     </p>
 
     <p>
-        In 2022, Argentina won the FIFA World Cup in Qatar, with Messi
-        playing a central role in the team's campaign.
+        Messi has represented Argentina for many years and became
+        a World Cup champion in 2022.
     </p>
 
+    <details>
+
+        <summary>🏆 Argentina Trophies with Messi</summary>
+
+        <div class="trophy">
+
+            <h3>🏆 Copa América 2021</h3>
+
+            <p>
+                Argentina defeated Brazil in the final at the Maracanã
+                and Messi won his first major senior international trophy.
+            </p>
+
+        </div>
+
+        <div class="trophy">
+
+            <h3>🏆 Finalissima 2022</h3>
+
+            <p>
+                Argentina defeated Italy at Wembley Stadium to win
+                the Finalissima.
+            </p>
+
+        </div>
+
+        <div class="trophy">
+
+            <h3>🏆 FIFA World Cup 2022</h3>
+
+            <p>
+                Argentina defeated France in the final in Qatar and
+                Messi lifted the World Cup trophy.
+            </p>
+
+        </div>
+
+        <div class="trophy">
+
+            <h3>🏆 Copa América 2024</h3>
+
+            <p>
+                Argentina won another Copa América title in 2024.
+            </p>
+
+        </div>
+
+    </details>
+
 </section>
+
 
 <section id="achievements">
 
@@ -269,6 +414,7 @@
 
 </section>
 
+
 <section id="timeline">
 
     <h2>📖 Messi's Career Timeline</h2>
@@ -276,56 +422,86 @@
     <div class="timeline">
 
         <div class="timeline-item">
+
             <h3>2004 — Barcelona Debut</h3>
+
             <p>
                 Messi made his official first-team debut for FC Barcelona
                 and began his incredible professional career.
             </p>
+
         </div>
 
         <div class="timeline-item">
+
             <h3>2009 — First Ballon d'Or</h3>
+
             <p>
                 Messi won his first Ballon d'Or and established himself
                 among the world's leading footballers.
             </p>
+
         </div>
 
         <div class="timeline-item">
+
             <h3>2012 — Record-Breaking Year</h3>
+
             <p>
                 Messi produced one of the most remarkable goal-scoring
-                seasons in football history.
+                years in football history.
             </p>
+
         </div>
 
         <div class="timeline-item">
+
             <h3>2021 — Copa América Champion</h3>
+
             <p>
                 Messi won his first major senior international trophy
                 with Argentina at the Copa América.
             </p>
+
         </div>
 
         <div class="timeline-item">
+
             <h3>2022 — World Cup Champion</h3>
+
             <p>
                 Messi captained Argentina to the FIFA World Cup title
                 in Qatar.
             </p>
+
         </div>
 
         <div class="timeline-item">
+
+            <h3>2023 — Inter Miami</h3>
+
+            <p>
+                Messi joined Inter Miami and began a new chapter
+                of his career in Major League Soccer.
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
             <h3>2024 — Copa América Champion Again</h3>
+
             <p>
                 Argentina won another Copa América title, with Messi
                 part of the championship-winning team.
             </p>
+
         </div>
 
     </div>
 
 </section>
+
 
 <section id="worldcup" class="world-cup">
 
@@ -337,29 +513,44 @@
     </p>
 
     <div class="match">
+
         🇦🇷 <strong>Group Stage</strong><br>
+
         Argentina played Saudi Arabia, Mexico and Poland.
+
     </div>
 
     <div class="match">
+
         🇦🇺 <strong>Round of 16</strong><br>
+
         Argentina defeated Australia and advanced to the quarter-finals.
+
     </div>
 
     <div class="match">
+
         🇳🇱 <strong>Quarter-final</strong><br>
+
         Argentina faced the Netherlands and advanced after a penalty shootout.
+
     </div>
 
     <div class="match">
+
         🇭🇷 <strong>Semi-final</strong><br>
+
         Argentina defeated Croatia 3–0 and reached the World Cup final.
+
     </div>
 
     <div class="match">
+
         🇫🇷 <strong>Final</strong><br>
+
         Argentina faced France in a dramatic final and won the World Cup
         after a penalty shootout.
+
     </div>
 
     <div class="champions">
@@ -379,6 +570,72 @@
 
 </section>
 
+
+<section id="moments">
+
+    <h2>🌟 Famous Messi Moments</h2>
+
+    <details>
+
+        <summary>🇦🇷 Copa América 2021</summary>
+
+        <p>
+            Messi finally won a major senior international trophy
+            with Argentina after defeating Brazil in the final.
+        </p>
+
+    </details>
+
+    <details>
+
+        <summary>🏆 World Cup 2022 Final</summary>
+
+        <p>
+            Argentina defeated France in the final in Qatar,
+            with Messi scoring twice during the match.
+        </p>
+
+    </details>
+
+    <details>
+
+        <summary>🐐 8th Ballon d'Or</summary>
+
+        <p>
+            Messi won his eighth Ballon d'Or in 2023 after his
+            outstanding 2022 season and World Cup victory.
+        </p>
+
+    </details>
+
+</section>
+
+
+<section id="gallery">
+
+    <h2>📸 Messi Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg"
+             alt="Lionel Messi Argentina">
+
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Messi_Inter_Miami.jpg"
+             alt="Lionel Messi Inter Miami">
+
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel_Messi_20180626.jpg"
+             alt="Lionel Messi">
+
+    </div>
+
+    <p class="credit">
+        Images from Wikimedia Commons. Check each image's license
+        and attribution requirements before publishing.
+    </p>
+
+</section>
+
+
 <section id="favorite">
 
     <h2>💙 Why Messi Is My Favorite</h2>
@@ -393,6 +650,7 @@
     </p>
 
 </section>
+
 
 <section id="about">
 
@@ -418,6 +676,7 @@
     </div>
 
 </section>
+
 
 <footer>
 
