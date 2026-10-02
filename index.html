@@ -14,11 +14,11 @@
         header {
             background: linear-gradient(to bottom, #75c9f4, white, #75c9f4);
             text-align: center;
-            padding: 25px 15px;
+            padding: 35px 15px;
         }
 
         header h1 {
-            font-size: 38px;
+            font-size: 40px;
             margin: 10px;
         }
 
@@ -30,12 +30,15 @@
             background: #111;
             text-align: center;
             padding: 15px 5px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 8px;
+            margin: 7px;
             font-weight: bold;
             display: inline-block;
         }
@@ -46,25 +49,36 @@
 
         .hero {
             text-align: center;
-            padding: 30px 15px;
+            padding: 35px 15px;
             background: white;
         }
 
         .hero img {
             width: 100%;
-            max-width: 420px;
+            max-width: 430px;
             border-radius: 18px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
 
         .hero h2 {
-            font-size: 30px;
+            font-size: 32px;
             color: #168bd0;
             margin-bottom: 5px;
         }
 
         .hero p {
             font-size: 17px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background: #168bd0;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            margin-top: 10px;
+            font-weight: bold;
         }
 
         section {
@@ -77,6 +91,30 @@
         }
 
         h2 {
+            color: #168bd0;
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 220px;
+            background: #eef8ff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .card h3 {
             color: #168bd0;
         }
 
@@ -101,6 +139,56 @@
             font-size: 17px;
         }
 
+        .club {
+            background: #eef8ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border-left: 5px solid #75c9f4;
+        }
+
+        .club h3 {
+            color: #168bd0;
+            margin-top: 0;
+        }
+
+        .trophy {
+            background: white;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 10px;
+        }
+
+        .trophy h3 {
+            color: #168bd0;
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .stat {
+            flex: 1;
+            min-width: 130px;
+            background: #75c9f4;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .stat h3 {
+            font-size: 30px;
+            margin: 5px;
+        }
+
+        .stat p {
+            margin: 5px;
+            font-weight: bold;
+        }
+
         .timeline {
             border-left: 4px solid #75c9f4;
             padding-left: 20px;
@@ -114,19 +202,6 @@
         }
 
         .timeline-item h3 {
-            color: #168bd0;
-            margin-top: 0;
-        }
-
-        .club {
-            background: #eef8ff;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-            border-left: 5px solid #75c9f4;
-        }
-
-        .club h3 {
             color: #168bd0;
             margin-top: 0;
         }
@@ -158,18 +233,6 @@
             margin: 5px;
         }
 
-        .trophy {
-            background: #eef8ff;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-        }
-
-        .trophy h3 {
-            color: #168bd0;
-            margin-top: 0;
-        }
-
         .moment {
             background: #eef8ff;
             padding: 18px;
@@ -195,6 +258,16 @@
             margin-top: 8px;
         }
 
+        .quote {
+            background: linear-gradient(135deg, #75c9f4, white);
+            border-left: 5px solid #168bd0;
+            padding: 25px;
+            border-radius: 12px;
+            font-size: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+
         .about-box {
             background: #eef8ff;
             padding: 20px;
@@ -205,22 +278,51 @@
             background: #111;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section {
+                margin: 20px 10px;
+                padding: 20px;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
         }
     </style>
 </head>
 
 <body>
 
+
 <header>
+
     <h1>🇦🇷 Lionel Messi 🇦🇷</h1>
+
     <p>The Legend of Argentina Football</p>
+
 </header>
 
+
 <nav>
+
+    <a href="#home">Home</a>
     <a href="#messi">Messi</a>
     <a href="#clubs">Clubs</a>
+    <a href="#stats">Stats</a>
     <a href="#argentina">Argentina</a>
     <a href="#achievements">Trophies</a>
     <a href="#timeline">Career</a>
@@ -229,18 +331,25 @@
     <a href="#gallery">Gallery</a>
     <a href="#favorite">My Favorite</a>
     <a href="#about">About Me</a>
+
 </nav>
 
-<div class="hero">
 
-    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg"
-         alt="Lionel Messi playing for Argentina">
+<div class="hero" id="home">
+
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg"
+        alt="Lionel Messi playing for Argentina">
 
     <h2>THE GOAT 💫 🇦🇷</h2>
 
     <p>
         A football legend who lifted the World Cup with Argentina in 2022.
     </p>
+
+    <a class="hero-button" href="#messi">
+        Explore Messi ⚽
+    </a>
 
     <p class="credit">
         Photo: Hossein Zohrevand / Tasnim News Agency, CC BY 4.0
@@ -253,16 +362,63 @@
 
     <h2>⚽ Lionel Messi</h2>
 
-    <p>
+    <p class="intro">
         Lionel Messi is one of the most celebrated footballers in history.
-        He is famous for his incredible dribbling, passing, goals and
-        creativity on the football pitch.
+        He is famous for his incredible dribbling, passing, goals,
+        creativity and vision on the football pitch.
     </p>
 
     <p>
         Messi has represented Argentina throughout his international career
         and became a World Cup champion in 2022.
     </p>
+
+    <div class="quote">
+
+        "Football is a game, but for millions of people it is a passion."
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>⭐ Explore the Legend</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>🏆 Trophies</h3>
+
+            <p>
+                Explore Messi's major individual and team achievements.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🇦🇷 Argentina</h3>
+
+            <p>
+                Discover Messi's journey with the Argentina national team.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>⚽ Career</h3>
+
+            <p>
+                Follow the major chapters of Messi's football career.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -308,9 +464,52 @@
 </section>
 
 
+<section id="stats">
+
+    <h2>📊 Messi at a Glance</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+
+            <h3>8</h3>
+
+            <p>Ballon d'Or</p>
+
+        </div>
+
+        <div class="stat">
+
+            <h3>1</h3>
+
+            <p>World Cup</p>
+
+        </div>
+
+        <div class="stat">
+
+            <h3>2</h3>
+
+            <p>Copa América</p>
+
+        </div>
+
+        <div class="stat">
+
+            <h3>1</h3>
+
+            <p>Finalissima</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <section id="argentina">
 
-    <h2>🇦🇷 Argentina</h2>
+    <h2>🇦🇷 Messi & Argentina</h2>
 
     <p>
         Argentina has a rich football history and is one of the world's
@@ -331,8 +530,8 @@
             <h3>🏆 Copa América 2021</h3>
 
             <p>
-                Argentina defeated Brazil in the final at the Maracanã
-                and Messi won his first major senior international trophy.
+                Argentina defeated Brazil in the final and Messi won
+                his first major senior international trophy.
             </p>
 
         </div>
@@ -400,6 +599,7 @@
         </p>
 
         <ul>
+
             <li>🏆 2009 — FC Barcelona</li>
             <li>🏆 2010 — FC Barcelona</li>
             <li>🏆 2011 — FC Barcelona</li>
@@ -408,6 +608,7 @@
             <li>🏆 2019 — FC Barcelona</li>
             <li>🏆 2021 — Paris Saint-Germain</li>
             <li>🏆 2023 — Inter Miami CF</li>
+
         </ul>
 
     </details>
@@ -437,8 +638,7 @@
             <h3>2009 — First Ballon d'Or</h3>
 
             <p>
-                Messi won his first Ballon d'Or and established himself
-                among the world's leading footballers.
+                Messi won his first Ballon d'Or.
             </p>
 
         </div>
@@ -460,7 +660,7 @@
 
             <p>
                 Messi won his first major senior international trophy
-                with Argentina at the Copa América.
+                with Argentina.
             </p>
 
         </div>
@@ -515,7 +715,6 @@
     <div class="match">
 
         🇦🇷 <strong>Group Stage</strong><br>
-
         Argentina played Saudi Arabia, Mexico and Poland.
 
     </div>
@@ -523,7 +722,6 @@
     <div class="match">
 
         🇦🇺 <strong>Round of 16</strong><br>
-
         Argentina defeated Australia and advanced to the quarter-finals.
 
     </div>
@@ -531,7 +729,6 @@
     <div class="match">
 
         🇳🇱 <strong>Quarter-final</strong><br>
-
         Argentina faced the Netherlands and advanced after a penalty shootout.
 
     </div>
@@ -539,7 +736,6 @@
     <div class="match">
 
         🇭🇷 <strong>Semi-final</strong><br>
-
         Argentina defeated Croatia 3–0 and reached the World Cup final.
 
     </div>
@@ -547,7 +743,6 @@
     <div class="match">
 
         🇫🇷 <strong>Final</strong><br>
-
         Argentina faced France in a dramatic final and won the World Cup
         after a penalty shootout.
 
@@ -580,8 +775,8 @@
         <summary>🇦🇷 Copa América 2021</summary>
 
         <p>
-            Messi finally won a major senior international trophy
-            with Argentina after defeating Brazil in the final.
+            Messi won his first major senior international trophy
+            with Argentina after the team defeated Brazil in the final.
         </p>
 
     </details>
@@ -617,20 +812,14 @@
 
     <div class="gallery">
 
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg"
-             alt="Lionel Messi Argentina">
-
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Messi_Inter_Miami.jpg"
-             alt="Lionel Messi Inter Miami">
-
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel_Messi_20180626.jpg"
-             alt="Lionel Messi">
+        <img
+            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg"
+            alt="Lionel Messi playing for Argentina">
 
     </div>
 
     <p class="credit">
-        Images from Wikimedia Commons. Check each image's license
-        and attribution requirements before publishing.
+        Photo: Hossein Zohrevand / Tasnim News Agency, CC BY 4.0
     </p>
 
 </section>
@@ -669,8 +858,8 @@
 
         <p>
             I am a football fan and Lionel Messi is my favorite player.
-            I created this website to share my thoughts about Messi and
-            Argentina.
+            I created this website to share my thoughts about Messi
+            and Argentina.
         </p>
 
     </div>
@@ -685,6 +874,7 @@
     <p>Made with ❤️ by Abid</p>
 
 </footer>
+
 
 </body>
 </html>
